@@ -10,12 +10,44 @@ body {
   font-family: "Mukta", sans-serif;
 }
 
+main #products {
+  width: 100%;
+}
+main #products .container {
+  text-align: center;
+  height: 100%;
+  padding: 50px;
+}
+main #products .container .card {
+  width: 350px;
+  display: inline-block;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+main #products .container .card:last-child, main #products .container .card:nth-child(3) {
+  margin-right: 0;
+}
+main #products .container .card--image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+main #products .container .card--info {
+  display: flex;
+  justify-content: space-between;
+}
+main #products .container .card--text {
+  opacity: 0.6;
+}
+
 footer {
   padding: 30px 70px;
   background-color: #000;
   color: #fff;
 }
 footer #top {
+  width: 100%;
   display: flex;
 }
 footer #top table {

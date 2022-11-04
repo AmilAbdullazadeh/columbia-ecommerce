@@ -10,12 +10,60 @@ body {
   font-family: "Mukta", sans-serif;
 }
 
+main {
+
+  #products {
+    width: 100%;
+
+    .container {
+      // display: flex;
+      // justify-content: center;
+      // column-gap: 50px;
+      text-align: center;
+      height: 100%;
+      padding: 50px;
+
+      .card {
+        width: 350px;
+        display: inline-block;
+        margin-top: 50px;
+        margin-right: 20px;
+
+        // pseudo class
+        &:last-child, &:nth-child(3) {
+          margin-right: 0;
+        }
+
+        &--image {
+          width: 100%;
+          height: 350px;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+
+        &--info {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        &--price {
+        }
+
+        &--text {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}
+
 footer {
   padding: 30px 70px;
   background-color: #000;
   color: #fff;
 
   #top {
+    width: 100%;
     display: flex;
     table {
       width: 70%;
