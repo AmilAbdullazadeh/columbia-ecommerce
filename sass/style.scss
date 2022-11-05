@@ -4,16 +4,52 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 100vw;
+body,
+html {
+  width: 100%;
   height: 100vh;
+}
+
+body {
   font-family: "Mukta", sans-serif;
 }
 
 main {
-
   #products {
     width: 100%;
+
+    .row {
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+
+      h1 {
+        width: 75%;
+        position: relative;
+
+        &::before {
+          width: 250px;
+          content: "";
+          height: 1px;
+          background-color: #000;
+          opacity: .4;
+          position: absolute;
+          left: 0;
+          top: 14px;
+        }
+
+        &::after {
+          width: 250px;
+          content: "";
+          height: 1px;
+          background-color: #000;
+          opacity: .4;
+          position: absolute;
+          right: 0;
+          top: 14px;
+        }
+      }
+    }
 
     .container {
       // display: flex;
@@ -30,7 +66,7 @@ main {
         margin-right: 20px;
 
         // pseudo class
-        &:last-child, &:nth-child(3) {
+        &:last-child{
           margin-right: 0;
         }
 
@@ -39,6 +75,12 @@ main {
           height: 350px;
           object-fit: cover;
           border-radius: 10px;
+          cursor: pointer;
+          transition: all .35s linear;
+
+          &:hover {
+            opacity: .7;
+          }
         }
 
         &--info {
