@@ -15,46 +15,53 @@ body {
 }
 
 main {
-  #products {
+  background-color: #fff;
+  .products {
     width: 100%;
-
+    z-index: 1;
     .row {
       display: flex;
       justify-content: center;
-      text-transform: uppercase;
+      height: 180px;
+      overflow: hidden;
 
-      h1 {
+      p {
         width: 75%;
         position: relative;
+        opacity: 0.7;
+        top: 40%;
 
         &::before {
-          width: 250px;
+          width: 100px;
           content: "";
           height: 1px;
           background-color: #000;
-          opacity: .4;
+          opacity: 0.4;
           position: absolute;
           left: 0;
           top: 14px;
+          transform: rotate(90deg);
+          left: 43%;
+          top: -62px;
         }
 
         &::after {
-          width: 250px;
+          width: 100px;
           content: "";
           height: 1px;
           background-color: #000;
-          opacity: .4;
+          opacity: 0.4;
           position: absolute;
           right: 0;
           top: 14px;
+          transform: rotate(90deg);
+          right: 47%;
+          top: 88px;
         }
       }
     }
 
     .container {
-      // display: flex;
-      // justify-content: center;
-      // column-gap: 50px;
       text-align: center;
       height: 100%;
       padding: 50px;
@@ -64,9 +71,25 @@ main {
         display: inline-block;
         margin-top: 50px;
         margin-right: 20px;
+        position: relative;
+
+        &--icon {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          background-color: #fff;
+          border-radius: 50%;
+          padding: 5px;
+          cursor: pointer;
+          transition: all 0.35s linear;
+
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
 
         // pseudo class
-        &:last-child{
+        &:last-child {
           margin-right: 0;
         }
 
@@ -76,10 +99,10 @@ main {
           object-fit: cover;
           border-radius: 10px;
           cursor: pointer;
-          transition: all .35s linear;
+          transition: all 0.35s linear;
 
           &:hover {
-            opacity: .7;
+            opacity: 0.7;
           }
         }
 
@@ -95,6 +118,54 @@ main {
           opacity: 0.6;
         }
       }
+    }
+  }
+
+  .banner {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    clip-path: inset(0);
+
+    .img-item  {
+      object-fit: cover;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .img-box {
+      // background-image: url(../assets/background/bianca-berg-SxAw9-H7kCI-unsplash.jpeg);
+      // background-position: center;
+      // background-repeat: no-repeat;
+      // background-size: cover;
+      // background-attachment: fixed;
+      width: 100%;
+      height: 100vh;
+    }
+
+    &-info {
+      width: 250px;
+      position: absolute;
+      top: 41%;
+      left: 90px;
+      color: #fff;
+      z-index: 14;
+    }
+    &-text {
+      letter-spacing: 1px;
+      line-height: 25px;
+      margin-bottom: 25px;
+    }
+    &-btn {
+      background: #363636;
+      border-radius: 10px;
+      padding: 5px 10px;
+      color: #fff;
+      text-decoration: none;
     }
   }
 }
@@ -183,4 +254,9 @@ footer {
       }
     }
   }
+}
+
+
+.d-none {
+  display: none;
 }
