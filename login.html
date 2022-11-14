@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom style -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <title>Ecommerce</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img class="logo" src="./assets/icons/slack.svg" alt="" />
+        <ul class="nav-list">
+          <li class="nav-item item1">
+            <a href="./product-detail.html" target="_blank">Product detail</a>
+          </li>
+          <li class="nav-item item2">
+            <a href="#">Women</a>
+          </li>
+          <li class="nav-item item3">
+            <a href="#">Inspiration</a>
+          </li>
+          <li class="nav-item item4">
+            <a href="#">The blog</a>
+          </li>
+        </ul>
+        <div class="form-container">
+          <form>
+            <input
+              type="text"
+              placeholder="Search the products, brands and more"
+            />
+            <img
+              class="search-icon"
+              src="./assets/icons/search.svg"
+              alt="Search icon"
+            />
+          </form>
+        </div>
+        <div class="profile-container">
+          <ul>
+            <li>
+              <img class="profile" src="./assets/icons/user.svg" alt="Icon" />
+            </li>
+            <li>
+              <img
+                class="wishlist active"
+                src="./assets/icons/bookmark.svg"
+                alt="Icon"
+              />
+            </li>
+            <li>
+              <img
+                class="bag"
+                src="./assets/icons/shopping-cart.svg"
+                alt="Icon"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="card login-card d-none">
+          <div class="top"></div>
+          <div class="main">
+            <div class="head"><span>Login</span> or <span>Signup</span></div>
+            <form method="post">
+              <div class="phone">
+                <span>+994</span>
+                <span>|</span>
+                <input name="phone" type="text" placeholder="01234567789" />
+              </div>
+              <input type="submit" value="Continue" />
+            </form>
+          </div>
+        </div>
+
+        <div class="card login-otp">
+          <div class="top"></div>
+          <div class="main">
+            <div class="head head-otp">
+              Verify with OTP <br />
+              <span>Sent to 01223456789</span>
+            </div>
+            <form method="post">
+              <div class="otp-container">
+                <input name="otp1" type="text" placeholder="5" />
+                <input name="otp2" type="text" placeholder="5" />
+                <input name="otp3" type="text" placeholder="5" />
+                <input name="otp4" type="text" placeholder="5" />
+              </div>
+            </form>
+            <div class="bottom">
+              <p>Resend OTP In: <b>00:28</b></p>
+              <p>Login in using <a href="#">Password</a></p>
+              <p>Having trouble Logging in ? <a href="#">Get Help</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
