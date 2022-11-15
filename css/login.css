@@ -11,6 +11,24 @@ main {
   height: 100vh;
   background-color: rgba(211, 211, 211, 0.2784313725);
 }
+main .checkout {
+  width: 100%;
+  height: 100vh;
+}
+main .checkout--container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .checkout--top {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 20px;
+}
 main .container {
   display: flex;
   justify-content: center;
