@@ -1,364 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Custom style -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Ecommerce</title>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <img class="logo" src="./assets/icons/slack.svg" alt="" />
-        <ul class="nav-list">
-          <li class="nav-item item1">
-            <a href="./product-detail.html" target="_blank">Product detail</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;700&display=swap" rel="stylesheet" />
+  <!-- Custom style -->
+  <link rel="stylesheet" href="./sass/style.css" />
+  <title>Ecommerce</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <img class="logo" src="./assets/icons/slack.svg" alt="" />
+      <ul class="nav-list">
+        <li class="nav-item item1">
+          <a href="./product-detail.html" target="_blank">Product detail</a>
+        </li>
+        <li class="nav-item item2">
+          <a href="#">Women</a>
+        </li>
+        <li class="nav-item item3">
+          <a href="#">Inspiration</a>
+        </li>
+        <li class="nav-item item4">
+          <a href="#">The blog</a>
+        </li>
+      </ul>
+      <div class="form-container">
+        <form>
+          <input type="text" placeholder="Search the products, brands and more" />
+          <img class="search-icon" src="./assets/icons/search.svg" alt="Search icon" />
+        </form>
+      </div>
+      <div class="profile-container">
+        <ul>
+          <!-- login start -->
+          <li class="acount">
+            <a href="#"><img class="profile" src="./assets/icons/user.svg" alt="Icon" /></a>
+            <!-- <a href="" class="profile">login</a> -->
+              <ul class="ttype">
+                <li class="ttype-list">Welcome</li>
+                <li class="ttype-list">To access account and manage orders</li>
+                <li class="ttype-login"><a href="#">LOGIN/SIGNUP</a></li>
+                <hr class="acount-hr">
+                <li class="ttype-list">Orders</li>
+                <li class="ttype-list">Wishlist</li>
+                <li class="ttype-list">Gift Cards</li>
+                <li class="ttype-list">Contact Us</li>
+                <li class="ttype-list">Prada Insider </li>
+                <hr class="acount--hr">
+                <li class="ttype-list">Prada Credit</li>
+                <li class="ttype-list">Coupons</li>
+                <li class="ttype-list">Saved Cards</li>
+                <li class="ttype-list">Saved Account</li>
+              </ul>
+            
           </li>
-          <li class="nav-item item2">
-            <a href="#">Women</a>
+          <!-- login end -->
+          <li>
+            <img class="wishlist active" src="./assets/icons/bookmarklist.svg" alt="Icon" />
           </li>
-          <li class="nav-item item3">
-            <a href="#">Inspiration</a>
-          </li>
-          <li class="nav-item item4">
-            <a href="#">The blog</a>
+          <li>
+            <img class="bag" src="./assets/icons/shopping-cart.svg" alt="Icon" />
           </li>
         </ul>
-        <div class="form-container">
-          <form>
-            <input
-              type="text"
-              placeholder="Search the products, brands and more"
-            />
-            <img
-              class="search-icon"
-              src="./assets/icons/search.svg"
-              alt="Search icon"
-            />
-          </form>
-        </div>
-        <div class="profile-container">
-          <ul>
-            <li>
-              <img class="profile" src="./assets/icons/user.svg" alt="Icon" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="product-detail">
+      <div class="container" style="padding: 20px 50px">
+        <div class="box">
+          <ul class="lists" style="margin-bottom: 1em">
+            <li class="breadcrumb-item item">
+              <a href="./index.html">Home page</a> <span>/</span>
             </li>
-            <li>
-              <img
-                class="wishlist active"
-                src="./assets/icons/bookmark.svg"
-                alt="Icon"
-              />
-            </li>
-            <li>
-              <img
-                class="bag"
-                src="./assets/icons/shopping-cart.svg"
-                alt="Icon"
-              />
-            </li>
+            <li class="breadcrumb-item item">Produc detail</li>
           </ul>
+        </div>
+
+        <div class="row">
+          <div class="left-side">
+            <div class="top-row">
+              <img class="img" src="./assets/pictures/product_1.jpeg" alt="Pics" />
+              <img class="img" src="./assets/pictures/product_2.jpeg" alt="Pics" />
+            </div>
+            <div class="bottom-row">
+              <img class="img" src="./assets/pictures/product_1.jpeg" alt="Pics" />
+              <img class="img" src="./assets/pictures/product_2.jpeg" alt="Pics" />
+            </div>
+          </div>
+
+          <div class="right-side">
+            <div class="right--start">
+              <h1 class="start--top">streat9</h1>
+              <p class="start--center">broderie overlay crop bandeau top</p>
+            </div>
+
+            <div class="right--price">
+              <h1 class="price">$559 <del>$1399</del> <span class="faiz">60% OFF</span></h1>
+              <p class="help">inclusive of all taxes</p>
+            </div>
+
+            <div class="size">
+              <p class="size--text"> select size<span class="text-size"> Size chart ></span></p>
+              <ul class="size--alfa">
+                <li>S</li>
+                <li class="top-down">M
+                  <span class="red">2left</span>
+                </li>
+                <li>L</li>
+                <li class="top-down">XL
+                  <span class="red">3left</span>
+                </li>
+              </ul>
+              <div class="size--input">
+                <div class="shop">
+                  <img class="icon" src="./assets/icons/shopping-bag.svg" alt="">
+                  <p class="shop--text">add to bag</p>
+                </div>
+                <div class="list">
+                  <img class="icon" src="./assets/icons/bookmarklist.svg" alt="">
+                  <p class="list--text"> wishlist</p>
+                </div>
+              </div>
+            </div>
+            <div class="password">
+              <h4 class="pass-word">delivery options</h4>
+              <div class="code">
+                <input class="pin" type="text" placeholder="Enter pincode">
+                <b class="code--text">Check</b>
+              </div>
+              <p class="password--text">
+                Please enter PIN code to check delivery time & Pay on Delivey Avialability
+              </p>
+            </div>
+            <div class="word">
+              <p class="word--text">100% Original Products</p>
+              <p class="word--text">Free Delivery on order above Rs. 799</p>
+              <p class="word--text">Pay on delivery might be available</p>
+              <p class="word--text">Easy 30 days returns and exchanges</p>
+              <p class="word--text">Try & Buy might be available</p>
+            </div>
+            <div class="tag">
+              <b class="tag--text"> BEST OFFERS <img src="./assets/icons/tag.svg" alt=""></b>
+              <p class="tag-text">This product is already at its best price</p>
+              <hr>
+            </div>
+            <div class="details">
+              <p class="details--text"> Product DETAILS <img src="./assets/icons/align-justify.svg" alt=""></p>
+              <p class="details--code">Product code<span class="details--number">: 123347</span> </p>
+              <p class="details--code">Material/Fabric<span class="details--number">: 100%</span> </p>
+              <p class="details--code">Cottinsize & Fit<span class="details--number">: This brand runs true to size. To
+                  ensure the best fit,
+                  we suggest consulting the size chart.</span> </p>
+            </div>
+            <div class="list">
+              <p class="list-test">Bandeau Top <span class="testt">by</span> STREET9</p>
+              <ul class="list-text">
+                <li class="list--style">Made from cotton</li>
+                <li class="list--style">Off-shoulder style</li>
+                <li class="list--style">Broderie overlay detail</li>
+                <li class="list--style">Side zipper fasteningli>
+                <li class="list--style">Short flared sleeves</li>
+                <li class="list--style">Slim fit</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="product-detail">
-        <div class="container" style="padding: 20px 50px">
-          <div class="box">
-            <ul class="lists" style="margin-bottom: 1em">
-              <li class="breadcrumb-item item">
-                <a href="./index.html">Home page</a> <span>/</span>
-              </li>
-              <li class="breadcrumb-item item">Produc detail</li>
-            </ul>
-          </div>
-
-          <div class="row">
-            <div class="left-side">
-              <div class="top-row">
-                <img src="./assets/pictures/product_1.jpeg" alt="Pics" />
-                <img src="./assets/pictures/product_2.jpeg" alt="Pics" />
-              </div>
-              <div class="bottom-row">
-                <img src="./assets/pictures/product_1.jpeg" alt="Pics" />
-                <img src="./assets/pictures/product_2.jpeg" alt="Pics" />
-              </div>
-            </div>
-
-            <!-- <div class="right-side"></div> -->
-          </div>
-        </div>
-      </section>
-
-      <section class="products">
-        <div class="container">
-          <div class="title-row">
-            <div class="line"></div>
-            <span class="title-text">More dresses to buy</span>
-            <div class="line"></div>
-          </div>
-          <div class="card">
-            <img
-              class="card--image"
-              src="./assets/pictures/product_1.jpeg"
-              alt="Product image"
-            />
-            <img
-              class="card--icon"
-              src="./assets/icons/heart.svg"
-              alt="Like icon"
-            />
-            <div class="card--info">
-              <p class="card--text">Butterfly Printed Top</p>
-              <b class="card--price">200$</b>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              class="card--image"
-              src="./assets/pictures/product_2.jpeg"
-              alt="Product image"
-            />
-            <img
-              class="card--icon"
-              src="./assets/icons/heart.svg"
-              alt="Like icon"
-            />
-            <div class="card--info">
-              <p class="card--text">Butterfly Printed Top</p>
-              <b class="card--price">200$</b>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              class="card--image"
-              src="./assets/pictures/product_3.jpeg"
-              alt="Product image"
-            />
-            <img
-              class="card--icon"
-              src="./assets/icons/heart.svg"
-              alt="Like icon"
-            />
-            <div class="card--info">
-              <p class="card--text">Butterfly Printed Top</p>
-              <b class="card--price">200$</b>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              class="card--image"
-              src="./assets/pictures/product_1.jpeg"
-              alt="Product image"
-            />
-            <img
-              class="card--icon"
-              src="./assets/icons/heart.svg"
-              alt="Like icon"
-            />
-            <div class="card--info">
-              <p class="card--text">Butterfly Printed Top</p>
-              <b class="card--price">200$</b>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              class="card--image"
-              src="./assets/pictures/product_2.jpeg"
-              alt="Product image"
-            />
-            <img
-              class="card--icon"
-              src="./assets/icons/heart.svg"
-              alt="Like icon"
-            />
-            <div class="card--info">
-              <p class="card--text">Butterfly Printed Top</p>
-              <b class="card--price">200$</b>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              class="card--image"
-              src="./assets/pictures/product_3.jpeg"
-              alt="Product image"
-            />
-            <img
-              class="card--icon"
-              src="./assets/icons/heart.svg"
-              alt="Like icon"
-            />
-            <div class="card--info">
-              <p class="card--text">Butterfly Printed Top</p>
-              <b class="card--price">200$</b>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="products">
-        <div class="container">
-          <div class="title-row">
-            <div class="line"></div>
-            <span class="title-text">Customers also liked</span>
-            <div class="line"></div>
-          </div>
-          <div class="card">
-            <img
-              class="card--image"
-              src="./assets/pictures/product_1.jpeg"
-              alt="Product image"
-            />
-            <img
-              class="card--icon"
-              src="./assets/icons/heart.svg"
-              alt="Like icon"
-            />
-            <div class="card--info">
-              <p class="card--text">Butterfly Printed Top</p>
-              <b class="card--price">200$</b>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              class="card--image"
-              src="./assets/pictures/product_2.jpeg"
-              alt="Product image"
-            />
-            <img
-              class="card--icon"
-              src="./assets/icons/heart.svg"
-              alt="Like icon"
-            />
-            <div class="card--info">
-              <p class="card--text">Butterfly Printed Top</p>
-              <b class="card--price">200$</b>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              class="card--image"
-              src="./assets/pictures/product_3.jpeg"
-              alt="Product image"
-            />
-            <img
-              class="card--icon"
-              src="./assets/icons/heart.svg"
-              alt="Like icon"
-            />
-            <div class="card--info">
-              <p class="card--text">Butterfly Printed Top</p>
-              <b class="card--price">200$</b>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <section id="top">
-        <table>
-          <tr>
-            <th>Shopping</th>
-            <th>Need Help</th>
-            <th>Locations</th>
-            <th>Social</th>
-          </tr>
-          <tr>
-            <td><a href="#">Men</a></td>
-            <td><a href="#">Contact Us</a></td>
-            <td><a href="#">Stores</a></td>
-            <td>
-              <a href="facebook.com" target="_blank">Facebook</a>
-            </td>
-          </tr>
-          <tr>
-            <td><a href="#">Women</a></td>
-            <td><a href="#">Track Order</a></td>
-            <td><a href="#">Popups</a></td>
-            <td>
-              <a href="instagram.com" target="_blank">Instagram</a>
-            </td>
-          </tr>
-          <tr>
-            <td><a href="#">Kids</a></td>
-            <td><a href="#">Return Policy</a></td>
-            <td><a href="#">Exhibits</a></td>
-            <td>
-              <a href="twitter.com" target="_blank">Twitter</a>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><a href="#">Shipping Information</a></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><a href="#">FAQs</a></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><a href="#">Terms and Conditions</a></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><a href="#">Privacy and Policy</a></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </table>
-        <div class="form">
-          <h4>The Latest</h4>
-          <p>Use the Newsletter Block below to collect email addresses</p>
-          <form>
-            <input type="email" class="form--email" placeholder="Email " />
-            <br />
-            <input type="submit" value="SIGNUP" class="form--submit" />
-          </form>
-        </div>
-      </section>
-      <section id="bottom">
-        <div>
-          <h4>Popular Searchs</h4>
+    <section class="products">
+      <div class="container">
+        <div class="title-row">
+          <div class="line"></div>
+          <span class="title-text">More dresses to buy</span>
           <div class="line"></div>
         </div>
-        <div class="box">
-          <ul class="lists">
-            <li class="item">Bras <span>|</span></li>
-            <li class="item">Bras <span>|</span></li>
-            <li class="item">Bras <span>|</span></li>
-            <li class="item">Bras <span>|</span></li>
-            <li class="item">Bras <span>|</span></li>
-            <li class="item">Bras <span>|</span></li>
-            <li class="item">Bras <span>|</span></li>
-            <li class="item">Bras <span>|</span></li>
-            <li class="item">Bras <span>|</span></li>
-            <li class="item">Bras <span>|</span></li>
-            <li class="item">Bras <span>|</span></li>
-            <li class="item">Bras <span>|</span></li>
-            <li class="item">Bras <span>|</span></li>
-            <li class="item">Bras <span>|</span></li>
-            <li class="item">Bras <span>|</span></li>
-            <li class="item">Bras <span>|</span></li>
-            <li class="item">Bras <span>|</span></li>
-          </ul>
+        <div class="card">
+          <img class="card--image" src="./assets/pictures/product_1.jpeg" alt="Product image" />
+          <img class="card--icon" src="./assets/icons/heart.svg" alt="Like icon" />
+          <div class="card--info">
+            <p class="card--text">Butterfly Printed Top</p>
+            <b class="card--price">200$</b>
+          </div>
         </div>
-      </section>
-    </footer>
-  </body>
+        <div class="card">
+          <img class="card--image" src="./assets/pictures/product_2.jpeg" alt="Product image" />
+          <img class="card--icon" src="./assets/icons/heart.svg" alt="Like icon" />
+          <div class="card--info">
+            <p class="card--text">Butterfly Printed Top</p>
+            <b class="card--price">200$</b>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card--image" src="./assets/pictures/product_3.jpeg" alt="Product image" />
+          <img class="card--icon" src="./assets/icons/heart.svg" alt="Like icon" />
+          <div class="card--info">
+            <p class="card--text">Butterfly Printed Top</p>
+            <b class="card--price">200$</b>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card--image" src="./assets/pictures/product_1.jpeg" alt="Product image" />
+          <img class="card--icon" src="./assets/icons/heart.svg" alt="Like icon" />
+          <div class="card--info">
+            <p class="card--text">Butterfly Printed Top</p>
+            <b class="card--price">200$</b>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card--image" src="./assets/pictures/product_2.jpeg" alt="Product image" />
+          <img class="card--icon" src="./assets/icons/heart.svg" alt="Like icon" />
+          <div class="card--info">
+            <p class="card--text">Butterfly Printed Top</p>
+            <b class="card--price">200$</b>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card--image" src="./assets/pictures/product_3.jpeg" alt="Product image" />
+          <img class="card--icon" src="./assets/icons/heart.svg" alt="Like icon" />
+          <div class="card--info">
+            <p class="card--text">Butterfly Printed Top</p>
+            <b class="card--price">200$</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="container">
+        <div class="title-row">
+          <div class="line"></div>
+          <span class="title-text">Customers also liked</span>
+          <div class="line"></div>
+        </div>
+        <div class="card">
+          <img class="card--image" src="./assets/pictures/product_1.jpeg" alt="Product image" />
+          <img class="card--icon" src="./assets/icons/heart.svg" alt="Like icon" />
+          <div class="card--info">
+            <p class="card--text">Butterfly Printed Top</p>
+            <b class="card--price">200$</b>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card--image" src="./assets/pictures/product_2.jpeg" alt="Product image" />
+          <img class="card--icon" src="./assets/icons/heart.svg" alt="Like icon" />
+          <div class="card--info">
+            <p class="card--text">Butterfly Printed Top</p>
+            <b class="card--price">200$</b>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card--image" src="./assets/pictures/product_3.jpeg" alt="Product image" />
+          <img class="card--icon" src="./assets/icons/heart.svg" alt="Like icon" />
+          <div class="card--info">
+            <p class="card--text">Butterfly Printed Top</p>
+            <b class="card--price">200$</b>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section id="top">
+      <table>
+        <tr>
+          <th>Shopping</th>
+          <th>Need Help</th>
+          <th>Locations</th>
+          <th>Social</th>
+        </tr>
+        <tr>
+          <td><a href="#">Men</a></td>
+          <td><a href="#">Contact Us</a></td>
+          <td><a href="#">Stores</a></td>
+          <td>
+            <a href="facebook.com" target="_blank">Facebook</a>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="#">Women</a></td>
+          <td><a href="#">Track Order</a></td>
+          <td><a href="#">Popups</a></td>
+          <td>
+            <a href="instagram.com" target="_blank">Instagram</a>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="#">Kids</a></td>
+          <td><a href="#">Return Policy</a></td>
+          <td><a href="#">Exhibits</a></td>
+          <td>
+            <a href="twitter.com" target="_blank">Twitter</a>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><a href="#">Shipping Information</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><a href="#">FAQs</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><a href="#">Terms and Conditions</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><a href="#">Privacy and Policy</a></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <div class="form">
+        <h4>The Latest</h4>
+        <p>Use the Newsletter Block below to collect email addresses</p>
+        <form>
+          <input type="email" class="form--email" placeholder="Email " />
+          <br />
+          <input type="submit" value="SIGNUP" class="form--submit" />
+        </form>
+      </div>
+    </section>
+    <section id="bottom">
+      <div>
+        <h4>Popular Searchs</h4>
+        <div class="line"></div>
+      </div>
+      <div class="box">
+        <ul class="lists">
+          <li class="item">Bras <span>|</span></li>
+          <li class="item">Bras <span>|</span></li>
+          <li class="item">Bras <span>|</span></li>
+          <li class="item">Bras <span>|</span></li>
+          <li class="item">Bras <span>|</span></li>
+          <li class="item">Bras <span>|</span></li>
+          <li class="item">Bras <span>|</span></li>
+          <li class="item">Bras <span>|</span></li>
+          <li class="item">Bras <span>|</span></li>
+          <li class="item">Bras <span>|</span></li>
+          <li class="item">Bras <span>|</span></li>
+          <li class="item">Bras <span>|</span></li>
+          <li class="item">Bras <span>|</span></li>
+          <li class="item">Bras <span>|</span></li>
+          <li class="item">Bras <span>|</span></li>
+          <li class="item">Bras <span>|</span></li>
+          <li class="item">Bras <span>|</span></li>
+        </ul>
+      </div>
+    </section>
+  </footer>
+</body>
+
 </html>
