@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+}
+
+main {
+    width: 97%;
+  height: 100vh;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 66%;
+    text-align: center;
+    .verifed {
+      position: relative;
+      form {
+        .radio_mobile {
+            position: absolute;
+            accent-color: green;
+            position: left;
+            left: -154px;
+            top: 64px;
+        }
+
+        .line {
+            position: absolute;
+          width: 134px;
+           height: -7px;
+           border: 1px solid green;
+           top: 68px;
+            left: -142px;
+          background: green;
+        }
+        .radio_link {
+            position: absolute;
+            left: -8px;
+            top: 64px;
+        }
+        .line_second {
+            width: 99px;
+            border: dashed gray;
+            position: absolute;
+            top: 68px;
+            right: -103px;
+        }
+
+        .radio_login {
+            position: absolute;
+            left: 103px;
+            top: 64px;
+        }
+        }
+      }
+    }
+
+    .login {
+        display: flex;
+        justify-content: space-between;
+        gap: 46px;
+        margin-left: -42px;
+        margin-top: 74px;
+        text-align: center;
+
+        p{
+            font-size: 12px;
+        }
+    }
+    .account{
+        position: relative;
+        .account_icons{
+            position: absolute;
+            .facebook{
+                position: absolute;
+                top: 12px;
+                left: 32px;
+                font-size: 23px;
+                color: blue;
+            }
+            .google{
+                position: absolute;
+                top: 13px;
+                left: 196px;
+                font-size: 21px;
+                color: orangered;
+            }
+            .gmail{
+                position: absolute;
+                left: 196px;
+                font-size: 21px;
+                top: 74px;
+                left: 95px;
+                color:red;
+                
+            }
+        }
+        form{
+            .facebook_account{
+                width: 158px;
+                height: 48px;
+                border: 1px solid lightgray;
+                border-color: lightgrey;
+                border-radius: 5px;
+                padding: 0px 48px;
+                outline: none;
+                cursor: pointer;
+                transition: 0.7s;   
+            }
+
+            .google_account{
+                width: 158px;
+                height: 48px;
+                border: 1px solid lightgray;
+                border-color: lightgrey;
+                border-radius: 5px;
+                padding: 0px 48px;
+                outline: none;
+                cursor: pointer;
+                transition: 0.7s; 
+                margin-bottom: 15px;
+            }
+
+            .email{
+                width: 320px;
+                height: 45px;
+                border: 1px solid lightgray;
+                border-color: lightgrey;
+                border-radius: 5px;
+               
+                outline: none;
+                cursor: pointer;
+                transition: 0.7s;
+                &::placeholder{
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .line--text{
+        margin-top: 30px;
+        display: flex;
+        gap: 5px;
+      
+        align-items: center;
+        .first_line{
+            width: 100px;
+            height: 1px;
+            border:1px solid grey;
+            background-color: grey;
+            
+        }
+
+        h3{
+            opacity: 0.7;
+        }
+
+        .second_line{
+            width: 100px;
+            height: 1px;
+            border:1px solid grey;
+            background-color: grey;
+        }   
+    }
+
+    .create_account{
+        margin-top: 20px;
+        position: relative;
+        .user{
+            position: absolute;
+            top: 63px;
+            left: 80px;
+        }
+
+        h2{
+            margin-bottom: 10px;
+        }
+      .account_new{
+        width: 320px;
+        height: 45px;
+        border: 1px solid lightgray;
+        border-color: lightgrey;
+        border-radius: 5px;
+        outline: none;
+        cursor: pointer;
+        transition: 0.7s;
+
+        &::placeholder{
+            text-align: center;
+        }
+      }
+    }
+  }
+
