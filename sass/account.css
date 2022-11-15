@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  width: 97%;
+  height: 100vh;
+}
+main .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 66%;
+  text-align: center;
+}
+main .container .verifed {
+  position: relative;
+}
+main .container .verifed form .radio_mobile {
+  position: absolute;
+  accent-color: green;
+  position: left;
+  left: -154px;
+  top: 64px;
+}
+main .container .verifed form .line {
+  position: absolute;
+  width: 134px;
+  height: -7px;
+  border: 1px solid green;
+  top: 68px;
+  left: -142px;
+  background: green;
+}
+main .container .verifed form .radio_link {
+  position: absolute;
+  left: -8px;
+  top: 64px;
+}
+main .container .verifed form .line_second {
+  width: 99px;
+  border: dashed gray;
+  position: absolute;
+  top: 68px;
+  right: -103px;
+}
+main .container .verifed form .radio_login {
+  position: absolute;
+  left: 103px;
+  top: 64px;
+}
+main .login {
+  display: flex;
+  justify-content: space-between;
+  gap: 46px;
+  margin-left: -42px;
+  margin-top: 74px;
+  text-align: center;
+}
+main .login p {
+  font-size: 12px;
+}
+main .account {
+  position: relative;
+}
+main .account .account_icons {
+  position: absolute;
+}
+main .account .account_icons .facebook {
+  position: absolute;
+  top: 12px;
+  left: 32px;
+  font-size: 23px;
+  color: blue;
+}
+main .account .account_icons .google {
+  position: absolute;
+  top: 13px;
+  left: 196px;
+  font-size: 21px;
+  color: orangered;
+}
+main .account .account_icons .gmail {
+  position: absolute;
+  left: 196px;
+  font-size: 21px;
+  top: 74px;
+  left: 95px;
+  color: red;
+}
+main .account form .facebook_account {
+  width: 158px;
+  height: 48px;
+  border: 1px solid lightgray;
+  border-color: lightgrey;
+  border-radius: 5px;
+  padding: 0px 48px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.7s;
+}
+main .account form .google_account {
+  width: 158px;
+  height: 48px;
+  border: 1px solid lightgray;
+  border-color: lightgrey;
+  border-radius: 5px;
+  padding: 0px 48px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.7s;
+  margin-bottom: 15px;
+}
+main .account form .email {
+  width: 320px;
+  height: 45px;
+  border: 1px solid lightgray;
+  border-color: lightgrey;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.7s;
+}
+main .account form .email::-moz-placeholder {
+  text-align: center;
+}
+main .account form .email:-ms-input-placeholder {
+  text-align: center;
+}
+main .account form .email::placeholder {
+  text-align: center;
+}
+main .line--text {
+  margin-top: 30px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+main .line--text .first_line {
+  width: 100px;
+  height: 1px;
+  border: 1px solid grey;
+  background-color: grey;
+}
+main .line--text h3 {
+  opacity: 0.7;
+}
+main .line--text .second_line {
+  width: 100px;
+  height: 1px;
+  border: 1px solid grey;
+  background-color: grey;
+}
+main .create_account {
+  margin-top: 20px;
+  position: relative;
+}
+main .create_account .user {
+  position: absolute;
+  top: 63px;
+  left: 80px;
+}
+main .create_account h2 {
+  margin-bottom: 10px;
+}
+main .create_account .account_new {
+  width: 320px;
+  height: 45px;
+  border: 1px solid lightgray;
+  border-color: lightgrey;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.7s;
+}
+main .create_account .account_new::-moz-placeholder {
+  text-align: center;
+}
+main .create_account .account_new:-ms-input-placeholder {
+  text-align: center;
+}
+main .create_account .account_new::placeholder {
+  text-align: center;
+}/*# sourceMappingURL=account.css.map */

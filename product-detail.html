@@ -12,7 +12,8 @@
       rel="stylesheet"
     />
     <!-- Custom style -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./sass/style.css" />
     <title>Ecommerce</title>
   </head>
   <body>
@@ -73,6 +74,9 @@
     <main>
       <section class="product-detail">
         <div class="container" style="padding: 20px 50px">
+
+        
+          
           <div class="box">
             <ul class="lists" style="margin-bottom: 1em">
               <li class="breadcrumb-item item">
@@ -93,8 +97,80 @@
                 <img src="./assets/pictures/product_2.jpeg" alt="Pics" />
               </div>
             </div>
+            
+            <div class="right-side">
+              <h1>Street9</h1>
+              <p>Broderie Overlay Crop Bandeau Top</p>
+              <div class="black-friday">
+                <span class="money_cash">$559 </span>       
+                <del>$1,399</del> 
+                <span class="friday">60%OFF</span>
+              </div>
+              <p style="color:darkgreen;margin-top: -14px;">inculisive of all taxes</p>
 
-            <!-- <div class="right-side"></div> -->
+              <div class="size_select">
+                <span class="size">SELECT SIZE</span>
+                <span class="chart">SIZE CHART</span>
+                <form action="#">
+                  <div class="size_choose">
+                    <input name="s" type="text" placeholder="S">
+                    <input name="m" type="text" placeholder="M">
+                    <input name="l" type="text" placeholder="L">
+                    <input name="xl" type="text"placeholder="XL">
+
+                  </div>
+
+                </form>
+              </div>
+
+              <div class="favori_List">
+                
+                <i class="fa-solid bag_shop fa-bag-shopping"></i>
+                <i class="fa-solid bookmark fa-bookmark"></i>
+                <form action="#">
+
+                  <input  class="add_bag" type="text" placeholder="ADD TO BAG" >
+                  <input class="whis_list" type="text" placeholder="WHISLIT">
+
+                </form>
+              </div>
+
+              <div class="delivery">
+                <div class="delive_text">
+                  <span>Delivery options  </span>
+                  <i  class="fa-solid delive_icon fa-truck-ramp-box"></i>
+                </div>
+
+                <p>Check</p>
+                <form action="#">
+                  <input type="number" placeholder="Enter pincode" aria-placeholder="check">
+                </form>
+
+              </div>
+
+              <div class="delivery-info">
+                <p>Please enter PIN code to check delivery time & Pay on Delivery Availabilty </p>
+
+                <ul>
+                  <li>100% Original Products</li>
+                  <li>Free deliovery on order above Rs. 799</li>
+                  <li>100% Original Products</li>
+                  <li>100% Original Products</li>
+                  <li>100% Original Products</li>
+
+                </ul>
+              </div>
+
+              <div class="best_offers">
+                <span>Best Offers </span>
+                <i  class="fa-solid tag_icon fa-tag"></i>
+                <p>This product is already at its best price</p>
+              </div>
+           
+
+            </div>
+            
+  
           </div>
         </div>
       </section>
@@ -360,5 +436,7 @@
         </div>
       </section>
     </footer>
+
+    <script src="https://kit.fontawesome.com/79a77fb731.js" crossorigin="anonymous"></script>
   </body>
 </html>
