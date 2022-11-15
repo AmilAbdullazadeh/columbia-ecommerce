@@ -1,0 +1,148 @@
+main {
+  width: 100%;
+  height: 100vh;
+}
+main .checkout {
+  width: 100%;
+  height: 100%;
+}
+main .checkout--container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+main .checkout--info {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 1.5em;
+}
+main .checkout--card {
+  width: 800px;
+  border: 1px solid lightgrey;
+  border-radius: 7px;
+  padding: 20px;
+}
+main .checkout--card .card--product {
+  line-height: 30px;
+}
+main .checkout--card .card--body {
+  display: flex;
+  justify-content: space-between;
+}
+main .checkout--card .card--body .card--img {
+  width: 180px;
+  height: 250px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+main .checkout--card .card--body .card--box {
+  display: flex;
+  column-gap: 25px;
+}
+main .checkout--card .card--body .card--box strong {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+main .checkout--card .card--body .card--box span {
+  opacity: 0.5;
+}
+main .checkout--card .card--body .card--box .product--info {
+  margin-top: 15px;
+}
+main .checkout--card .card--body .card--box .product--info select {
+  border: none;
+  background-color: rgba(128, 128, 128, 0.1803921569);
+  padding: 3px;
+  outline: none;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+main .checkout--card .card--body .card--box .product--info select:last-child {
+  margin-right: 0;
+}
+main .checkout--card .card--body .card--price {
+  text-align: right;
+}
+main .checkout--card .card--body .card--price b {
+  font-size: 20px;
+}
+main .checkout--card .card--body .card--price .percentage del {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+main .checkout--card .card--body .card--price .percentage span {
+  font-weight: 700;
+  color: orangered;
+}
+main .checkout--card .line {
+  width: 100%;
+  height: 1px;
+  background-color: lightgrey;
+  margin: 15px 0;
+}
+main .checkout--card .card--bottom {
+  display: flex;
+}
+main .checkout--card .card--bottom span {
+  color: grey;
+}
+main .checkout--card .card--bottom button {
+  width: 234px;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  opacity: 0.7;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+}
+main .checkout--card .card--bottom button:last-child {
+  width: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  main .checkout--container {
+    padding: 0 10px;
+  }
+  main .checkout--info {
+    width: 100%;
+    font-size: 16px;
+  }
+  main .checkout--card {
+    width: 100%;
+  }
+  main .card--price {
+    margin-top: 10px;
+    text-align: left !important;
+  }
+  main .card--price b {
+    font-size: 16px !important;
+  }
+  main .product--info {
+    display: flex;
+  }
+  main .percentage {
+    font-size: 14px !important;
+  }
+  main .card--body {
+    flex-direction: column;
+  }
+  main .card--product {
+    line-height: 25px !important;
+    font-size: 14px !important;
+  }
+  main .card--product strong {
+    font-size: 15px !important;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) *//*# sourceMappingURL=checkout.css.map */
