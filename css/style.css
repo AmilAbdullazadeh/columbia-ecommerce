@@ -23,6 +23,16 @@ header {
   top: 0;
   background-color: #fff;
 }
+@media (max-width: 767px) {
+  header {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  header {
+    display: none;
+  }
+}
 header .container {
   width: 100%;
   height: 100%;
@@ -134,7 +144,16 @@ main .products .row p {
   width: 75%;
   position: relative;
   opacity: 0.7;
-  top: 40%;
+}
+@media (max-width: 767px) {
+  main .products .row p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  main .products .row p::before, main .products .row p::after {
+    display: none;
+  }
 }
 main .products .row p::before {
   width: 100px;
@@ -189,6 +208,11 @@ main .products .container .card {
   margin-top: 50px;
   margin-right: 20px;
   position: relative;
+}
+@media (max-width: 767px) {
+  main .products .container .card {
+    width: 90%;
+  }
 }
 main .products .container .card--icon {
   position: absolute;
@@ -269,6 +293,11 @@ footer {
   background-color: #000;
   color: #fff;
 }
+@media (max-width: 767px) {
+  footer {
+    display: none;
+  }
+}
 footer #top {
   width: 100%;
   display: flex;
@@ -336,4 +365,27 @@ footer #top .form input {
 
 .d-none {
   display: none;
+}
+
+@keyframes text-animation {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 75px;
+  }
+}
+.slide-bottom {
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100px);
+  }
 }/*# sourceMappingURL=style.css.map */
